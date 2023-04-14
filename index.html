@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line Art Tattoo</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <header>
+      <h1 id="title">Fine Line Art Tattoo Form</h1>
+      <p id="description">Please provide as much detail you can to ensure a more satifying design</p>
+    </header><div class="container">
+ <form id="survey-form"> 
+   <fieldset class="personal-info">
+     <label id="name-label">Name</label><input placeholder="Enter your name" required id="name" type="text"></input >
+     <label id="number-label">Age</label> <input placeholder="Age" min="18" max="120" id="number" type="number" required></input>
+     <label id="email-label">Email</label> <input placeholder="Enter your email" type="email" id="email" required></input>
+   </fieldset>
+   <fieldset class="tattoo-design">
+     <p for="design-topic">Design topic: </p>
+     <textarea id="design-topic" name="design" rows="5" cols="50" placeholder="Please elaborate on your ideal design..."></textarea>
+     <p for="design-img">Please attach images of designs:</p>
+     <input type="file" id="design-img" name="design-img" accept="image/png, image/jpeg"></input>
+   </fieldset>
+   <fieldset>
+       <p>What is the size of your ideal tattoo design?</p>
+       <label for="sml-size" class="form-control"><input type="radio" name="size" id="sml-size" value="small" checked class="input-radio"></input>Small</label>
+<label for="med-size"class="form-control" class="form-control"><input type="radio" name="size" id="med-size" value="medium" class="input-radio"></input>Medium</label>
+       <label class="form-control" for="lrg-size"><input type="radio" name="size" id="lrg-size" value="large" class="input-radio"></input>Large</label>
+       <label class="form-control" for="xlrg-size"><input type="radio" name="size" id="xlrg-size" value="x-large" class="input-radio"></input>Extra Large</label>
+     <br/>
+     <div class="placement-form">
+       <p for="body-select">Specify body placement:</p>
+       <select name="body-part" id="dropdown">
+         <option value="">--Please select one--</option>
+         <option value="wrist">Wrist</option>
+         <option value="ankle">Ankle</option>
+         <option value="b-palm">Back of the palm</option>
+         <option value="b-ear">Behind the ear</option>
+         <option value="t-foot">Top of the foot</option>
+         <option value="above-elbow">Above the elbow</option>
+         <option value="fingers">Fingers</option>
+         <option value="knee">Knee</option>
+         <option value="other">Other</option>
+       </select>
+       <br>
+       <p for="body-other">If other, please specify:</p>
+       <textarea id="body-other" name="body-other" placeholder="Upper Arm, Neck, Chest etc..." rows="2" cols="30"></textarea>
+    </div>
+  </fieldset>
+  <fieldset>
+     <label>How did you hear about us? <span class="hint">(Check all that apply)</span></label>
+     <br>
+       <input type="checkbox" name="marketing" value="referral" id="marketing-referral" class="input-checkbox"></input><label for="marketing-referral">Through a Friend</label>
+      <input type="checkbox" name="marketing" value="facebook" id="marketing-facebook" class="input-checkbox"></input>
+      <label for="marketing-facebook">Facebook</label>
+      <input type="checkbox" name="marketing" value="instagram" id="marketing-instagram" class="input-checkbox"></input>
+      <label for="marketing-instagram">Instagram</label>
+      <input type="checkbox" name="marketing" value="tiktok" id="marketing-tiktok" class="input-checkbox"></input>
+      <label for="marketing-tiktok">Tiktok</label>
+      <input type="checkbox" name="marketing" value="google" id="marketing-google" class="input-checkbox"></input>
+      <label for="marketing-google">Google</label>
+      <input type="checkbox" name="marketing" value="other" id="marketing-other" class="input-checkbox"></input>
+      <label for="marketing-other">Other</label>
+  </fieldset>
+<input id="submit" type="submit"></input>
+ </form> 
+ </div>
+</body>
+</html>
